@@ -8,9 +8,9 @@ public class UserHelperFunctions {
                 "               2.Hotel Owner\n" +
                 "               3.Cook");
     }
-    public void userFunction(Scanner sc,Map<String, Map<String,HotelInfo>> hotelRegistryInfo,
-                    Map<String,Map<String,Integer>> Menu,HotelInfo hotelInfo,Map<String,HotelInfo> hotelData,
-                    int orderNo,UserInfo userInfo,Map<Integer,Map<String,UserInfo>> OrderInfo,Map<Integer,ArrayList<String>> ratingAndReview){
+    public void userFunction(Scanner sc, Map<String, Map<String,HotelInfo>> hotelRegistryInfo,
+                             Map<String,Map<String,Integer>> Menu, HotelInfo hotelInfo, Map<String,HotelInfo> hotelData,
+                             int orderNo, UserInfo userInfo, Map<Integer,Map<String,UserInfo>> OrderInfo, Map<Integer,ArrayList<String>> ratingAndReview){
         System.out.println("Please Enter your city");
         String city=sc.next();
         sc.nextLine();
