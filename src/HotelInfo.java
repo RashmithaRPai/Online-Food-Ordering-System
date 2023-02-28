@@ -6,8 +6,19 @@ public class HotelInfo {
     private String hotelCity;
     //veg or nonveg food served
     private String foodServed;
+    Menu mainMenu;
+    CookInfo cook;
+
     //string
     Map<Integer,ArrayList<String>> ratingAndReview;
+
+    public Menu  getMainMenu() {
+        return mainMenu;
+    }
+
+    public void setMainMenu(Menu mainMenu) {
+        this.mainMenu = mainMenu;
+    }
 
     public String getHotelName() {
         return hotelName;
@@ -41,10 +52,31 @@ public class HotelInfo {
         this.ratingAndReview = ratingAndReview;
     }
 
-    public HotelInfo(String hotelName, String hotelCity, String foodServed, Map<Integer, ArrayList<String>> ratingAndReview) {
+    public CookInfo getCook() {
+        return cook;
+    }
+
+    public void setCook(CookInfo cook) {
+        this.cook = cook;
+    }
+
+    public HotelInfo(String hotelName, String hotelCity, Menu mainMenu, String foodServed, Map<Integer, ArrayList<String>> ratingAndReview,CookInfo cook) {
         this.hotelName = hotelName;
         this.hotelCity = hotelCity;
         this.foodServed = foodServed;
         this.ratingAndReview = ratingAndReview;
+        this.mainMenu=mainMenu;
+        this.cook = cook;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                ", hotelCity='" + hotelCity + '\'' +
+                ", foodServed='" + foodServed + '\'' +
+                ", mainMenu=" + mainMenu +
+                ", cook=" + cook +
+                ", ratingAndReview=" + ratingAndReview +
+                '}';
     }
 }

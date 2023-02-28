@@ -15,4 +15,11 @@ public class Menu {
     public Menu(Map<String, Map<String, Integer>> menu) {
         Menu = menu;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "Menu=" + Menu +
+                '}';
+    }
 }

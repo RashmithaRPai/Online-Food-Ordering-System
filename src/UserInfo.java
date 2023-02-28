@@ -54,4 +54,15 @@ public class UserInfo {
         this.modeOfPayment = modeOfPayment;
         this.orderStatus = orderStatus;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "orderedItems=" + orderedItems +
+                ", orderedQuantity=" + orderedQuantity +
+                ", orderNumber=" + orderNumber +
+                ", modeOfPayment='" + modeOfPayment + '\'' +
+                ", orderStatus='" + orderStatus + '\'' +
+                '}';
+    }
 }
